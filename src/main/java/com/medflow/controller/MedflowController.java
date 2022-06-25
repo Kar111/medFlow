@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class MedflowController {
     @GetMapping
     public String healthCheck() {
+
         return "MedFlow is up and running!!!";
     }
 }
