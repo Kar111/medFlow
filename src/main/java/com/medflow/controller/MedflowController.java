@@ -10,6 +10,6 @@ public class MedflowController {
     @GetMapping
     public String healthCheck() {
 
-        return "MedFlow is up and running!!! ";
+        return "MedFlow is up and running!!!";
     }
 }
