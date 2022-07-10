@@ -10,12 +10,12 @@ import org.springframework.web.bind.annotation.*;
 public class
 
 MedflowController {
-    @Autowired
-    private final AdminRepository adminRepository;
-
-    public MedflowController(AdminRepository adminRepository) {
-        this.adminRepository = adminRepository;
-    }
+//    @Autowired
+//    private final AdminRepository adminRepository;
+//
+//    public MedflowController(AdminRepository adminRepository) {
+//        this.adminRepository = adminRepository;
+//    }
 
     @GetMapping
     public String healthCheck() {
@@ -23,14 +23,14 @@ MedflowController {
         return "MedFlow is up and running!!!";
     }
 
-    @GetMapping("imedflow/admin")
-    public String getAdminName( Long id) {
-        return adminRepository.findById(id).get().getFirstName();
-    }
-
-    @PostMapping("imedflow/admin")
-    public void AddAdminName(@RequestParam String firstName) {
-        Admin newAdmin = new Admin(firstName);
-        adminRepository.save(newAdmin);
-    }
+//    @GetMapping("imedflow/admin")
+//    public String getAdminName( Long id) {
+//        return adminRepository.findById(id).get().getFirstName();
+//    }
+//
+//    @PostMapping("imedflow/admin")
+//    public void AddAdminName(@RequestParam String firstName) {
+//        Admin newAdmin = new Admin(firstName);
+//        adminRepository.save(newAdmin);
+//    }
 }
