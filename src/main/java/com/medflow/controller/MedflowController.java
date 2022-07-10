@@ -17,7 +17,7 @@ MedflowController {
 //        this.adminRepository = adminRepository;
 //    }
 
-    @GetMapping
+    @GetMapping("/healthcheck")
     public String healthCheck() {
 
         return "MedFlow is up and running!!!";
